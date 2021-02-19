@@ -1,0 +1,153 @@
+$fontColor:white;
+// 全局样式配置（主题色）
+$theme_color: #eb6100;
+$theme_color_light: rgba(235, 97, 0, 0.1);
+// 字体大小(加粗)
+@mixin FontSize($x) {
+  font-size: $x;
+  font-weight: bold;
+  font-family: 微软雅黑;
+}
+
+// 字体大小(不加粗)
+@mixin FontOnly($x) {
+  font-size: $x;
+  font-family: 微软雅黑;
+}
+
+//字体全家桶
+@mixin Font($x, $y) {
+  font-size: $x;
+  font-family: 微软雅黑;
+  color: $y;
+}
+
+// 宽高背景
+@mixin SizeBack($x, $y, $z) {
+  width: $x;
+  height: $y;
+  background: $z;
+}
+
+//单纯的宽高
+@mixin Size($x, $y) {
+  width: $x;
+  height: $y;
+}
+
+// 菜单flex
+@mixin FlexMenu() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+//居于两侧
+@mixin FlexSpace() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin FlexArroud() {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// 单纯的padding
+@mixin Pd($x...) {
+  padding: $x;
+}
+
+// margin左右;
+@mixin Mlt($x, $y) {
+  margin-left: $x;
+  margin-top: $y;
+}
+
+//margin padding
+@mixin MP($x, $y) {
+  margin: $x;
+  padding: $y;
+}
+
+$fontColor:white;
+
+// 字体大小(加粗)
+@mixin FontSize($x) {
+  font-size: $x;
+  font-weight: bold;
+  font-family: 微软雅黑;
+}
+
+// 字体大小(不加粗)
+@mixin FontOnly($x) {
+  font-size: $x;
+  font-family: 微软雅黑;
+}
+
+//字体全家桶
+@mixin Font($x, $y) {
+  font-size: $x;
+  font-family: 微软雅黑;
+  color: $y;
+}
+
+// 宽高背景
+@mixin SizeBack($x, $y, $z) {
+  width: $x;
+  height: $y;
+  background: $z;
+}
+
+//单纯的宽高
+@mixin Size($x, $y) {
+  width: $x;
+  height: $y;
+}
+
+// 菜单flex
+@mixin FlexMenu() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+//居于两侧
+@mixin FlexSpace() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 单纯的padding
+@mixin Pd($x...) {
+  padding: $x;
+}
+
+// margin左右;
+@mixin Mlt($x, $y) {
+  margin-left: $x;
+  margin-top: $y;
+}
+
+//margin padding
+@mixin MP($x, $y) {
+  margin: $x;
+  padding: $y;
+}
+
+//背景、字体颜色
+@mixin BgC($x,$y) {
+  background: $x;
+  color: $y;
+}
+
+//wdith marginAuto
+@mixin Wm($x){
+  width: $x;
+  margin: 0 auto;
+}
